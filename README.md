@@ -30,13 +30,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach  iterates over all items in an array and calls the  method on each item. .map is used when we want to change every item in the array in the same way.`
+
 2. What is the difference between a function and a method?
+
+`A method is a function withn and object.`
 
 3. What is closure?
 
+`A Closure is a function that refers to  variable that was declared outside of the function.` 
+<!-- i.e: 
+const milk = 'hood'; 
+bringMilk = () => {
+    return milk;
+    } 
+    
+    return bringMilk(); -->
+
 4. Describe the four rules of the 'this' keyword.
 
+`In global context 'this' refers to the global onject. Two, when in a function but not in strict mode 'this' still refers to the global object. When in strict mode 'this' is undefined unless a value is set. Three, you can set the value of 'this' when you use the call() or apply() when calling a function. Four, You can see what 'this' refers to when you refer to the object to the immediate left of the dot where a function is called.`
+
 5. Why do we need super() in an extended class?
+
+`super() along with 'extends' replaces the Object.create methhod of binding a child to the parent constructor.`
 
 ## Project Set up
 
