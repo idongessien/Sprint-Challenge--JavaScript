@@ -6,68 +6,56 @@
   object name, diet, weight, length, period
 */
 
-class Dinosaur {
-  constructor(dinoAttrs) {
-    this.name = dinoAttrs.name;
-    this.diet = dinoAttrs.diet;
-    this.weight = dinoAttrs.weight;
-    this.length = dinoAttrslength;
-    this.period = dinoAttrs.period;
-  }
-}
-
-class Saurus extends Dinosaur {
-  constructor(dinoAttrs) {
-    super(dinoAttrs)
-  }
-}
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
-const tyran = new Dinosaur({
+const tyran = {
   name: 'tyrannosaurus',
   diet: 'carnivorous',
   weight: '7000kg',
   length: '12m',
   period: 'Late Cretaceous'
-});
+  roar: function(){
+    return `RAWERSRARARWERSARARARRRR!`;
+  }
+}
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
-const stego = new Dinosaur({
+const stego = {
   name: 'stegosaurus',
   diet: 'herbivorous',
   weight: '2000kg',
   length: '9m',
   period: 'Late Jurassic'
-});
+}
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
-const velo = new Dinosaur({
+const velo = {
   name: 'velociraptor',
   diet: 'carnivorous',
   weight: '15kg',
   length: '1.8m,',
   period: 'Late Cretaceous'
-});
+}
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(tyran.this.weight);
+console.log(tyran.weight); `7000kg`
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(velo.diet); `carnivorous`
 
 // How long was a stegosaurus?
-console.log();
+console.log(stego.length); `9m`
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyran.period);`Late Cretaceous`
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyran.roar());
 
 
 // ==== Arrays ====
@@ -90,8 +78,9 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities);
+const universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University", "Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University", "Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"];
+
+console.log(universities.sort());;
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
